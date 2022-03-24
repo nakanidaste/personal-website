@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./index.css";
+import { ThemeContext } from "../../context";
 
 const Product = ({ img, link }) => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
-    <div className="p">
-      <div className="p-browser">
-        <div className="p-circle"></div>
-        <div className="p-circle"></div>
-        <div className="p-circle"></div>
+    <div className="p" style={{ border: darkMode && "2px solid white" }}>
+      <div
+        className="p-browser"
+        style={{ backgroundColor: darkMode && "white" }}
+      >
+        <div
+          className="p-circle"
+          style={{ backgroundColor: darkMode && "black" }}
+        ></div>
+        <div
+          className="p-circle"
+          style={{ backgroundColor: darkMode && "black" }}
+        ></div>
+        <div
+          className="p-circle"
+          style={{ backgroundColor: darkMode && "black" }}
+        ></div>
       </div>
       <a href={link} target="_blank" rel="noreferrer">
         <img src={img} alt="" className="p-img" />

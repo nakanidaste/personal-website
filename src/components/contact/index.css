@@ -1,9 +1,9 @@
 .c {
   height: 100vh;
   position: relative;
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; */
+  /* justify-content: center; */
 }
 
 .c-bg {
@@ -40,12 +40,27 @@
   align-items: center;
   margin: 50px 0px;
   font-weight: 300;
+  /* background-color: blue; */
+}
+
+.c-icon-wrapper {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 
 .c-icon {
   width: 30px;
   height: 30px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
+}
+
+.c-icon-texts {
+  margin-left: 10px;
 }
 
 .c-desc {

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./index.css";
 import Me from "../../img/profile.jpg";
+import { ThemeContext } from "../../context";
 
 const Intro = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="i">
       <div className="i-left">
@@ -19,18 +23,19 @@ const Intro = () => {
             </div>
           </div>
           <p className="i-desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
+            I'm a full stack mobile developer and when making mobile apps I use
+            React Native for the frontend and Firebase for the backend.Why did I
+            choose to use React Native? Because being able to write 1 code for
+            all platforms is a big advantage of using React Native for me. Ohh
+            and one more thing, i love javascript ❤️❤️.
           </p>
         </div>
       </div>
       <div className="i-right">
-        <div className="i-bg"></div>
+        <div
+          className="i-bg"
+          style={{ backgroundColor: darkMode && "white" }}
+        ></div>
         {/* <img src={Me} alt="" className="i-img"></img> */}
       </div>
     </div>

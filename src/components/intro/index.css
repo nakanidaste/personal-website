@@ -95,7 +95,21 @@
     height: 100%;
   }
 
+  .i-name {
+    font-size: 40px;
+  }
+
   .i-desc {
     display: none;
+  }
+
+  .i-title {
+    margin-top: 20px;
+  }
+
+  .i-title-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

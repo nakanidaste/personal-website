@@ -36,21 +36,31 @@ const Contact = () => {
 
   return (
     <div className="c">
-      <div className="c-bg"></div>
+      <div
+        className="c-bg"
+        style={{ backgroundColor: darkMode && "white" }}
+      ></div>
       <div className="c-wrapper">
         <div className="c-left">
           <h1 className="c-title">Let's discuss your project</h1>
           <div className="c-info">
             <div className="c-info-item">
-              <img src={Phone} alt="" className="c-icon" /> 085156984818
+              <div className="c-icon-wrapper">
+                <img src={Phone} alt="" className="c-icon" />
+              </div>{" "}
+              <p className="c-icon-texts">085156984818</p>
             </div>
             <div className="c-info-item">
-              <img src={Email} alt="" className="c-icon" />{" "}
-              samuelys945@gmail.com
+              <div className="c-icon-wrapper">
+                <img src={Email} alt="" className="c-icon" />
+              </div>{" "}
+              <p className="c-icon-texts">samuelys945@gmail.com</p>
             </div>
             <div className="c-info-item">
-              <img src={Address} alt="" className="c-icon" /> Wonogiri, Jawa
-              Tengah, Indonesia
+              <div className="c-icon-wrapper">
+                <img src={Address} alt="" className="c-icon" />{" "}
+              </div>
+              <p className="c-icon-texts">Wonogiri, Jawa Tengah, Indonesia</p>
             </div>
           </div>
         </div>
@@ -84,7 +94,14 @@ const Contact = () => {
               placeholder="Message"
               name="message"
             />
-            <button>Submit</button>
+            <button
+              style={{
+                backgroundColor: darkMode && "white",
+                color: darkMode && "black",
+              }}
+            >
+              Submit
+            </button>
             {done && "Thank you..."}
           </form>
         </div>
