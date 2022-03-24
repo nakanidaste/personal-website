@@ -29,7 +29,7 @@ const About = () => {
           my Android ROM phone, and immediately after graduation I went on to
           study software development, especially mobile development. In my spare
           time, I like to watch movies or TV shows, and at night I like to play
-          games before going to bed. Ohh one more thing, my internet name is
+          games before going to bed. Ohh and one more thing, my internet name is
           Lullaby, so don't be confused if in almost all my social media and in
           game name, my name is not Samuel.
         </p>

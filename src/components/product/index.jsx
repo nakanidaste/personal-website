@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./index.css";
 import { ThemeContext } from "../../context";
+import Crypto from "../../img/cryptoss.png";
 
 const Product = ({ img, link }) => {
   const theme = useContext(ThemeContext);
