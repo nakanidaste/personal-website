@@ -118,6 +118,11 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <div className="c-end">
+        <p className="c-desc">
+          Made by me with <span id="emoji">❤️❤️❤️</span>
+        </p>
+      </div>
     </div>
   );
 };
