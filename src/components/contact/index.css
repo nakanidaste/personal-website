@@ -3,7 +3,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .c-bg {
@@ -40,7 +39,6 @@
   align-items: center;
   margin: 50px 0px;
   font-weight: 300;
-  /* background-color: blue; */
 }
 
 .c-icon-wrapper {
@@ -56,7 +54,6 @@
 .c-icon {
   width: 30px;
   height: 30px;
-  /* margin-right: 20px; */
 }
 
 .c-icon-texts {
@@ -117,6 +114,10 @@ button {
     padding: 0px 50px;
   }
 
+  .c-right {
+    flex: 0.8;
+  }
+
   .c-title {
     font-size: 30px;
   }
@@ -135,10 +136,11 @@ button {
   }
 
   .c-end {
-    width: 100%;
+    /* width: 100%;
     height: 30px;
     position: absolute;
-    margin-top: 135%;
+    margin-top: 100%; */
+    flex: 0.2;
   }
 
   form {
