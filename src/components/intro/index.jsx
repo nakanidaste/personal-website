@@ -1,11 +1,22 @@
 import React, { useContext } from "react";
 import "./index.css";
-import Me from "../../img/profile.jpg";
+//import Me from "../../img/profile.jpg";
+import Lottie from "react-lottie";
+import Animation from "../../utils/animation.json";
 import { ThemeContext } from "../../context";
 
 const Intro = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: Animation,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
   return (
     <div className="i">
@@ -36,6 +47,7 @@ const Intro = () => {
           className="i-bg"
           style={{ backgroundColor: darkMode && "white" }}
         ></div>
+        <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
         {/* <img src={Me} alt="" className="i-img"></img> */}
       </div>
     </div>

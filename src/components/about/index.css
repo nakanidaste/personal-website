@@ -38,9 +38,21 @@
   object-fit: cover;
 }
 
-.a-award-img {
-  width: 200px;
-  height: 120px;
+.a-stack-img-wrapper {
+  width: 50%;
+  height: 70px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.a-stack-img {
+  width: 60px;
+  height: 60px;
   border-radius: 20px;
 }
 
@@ -55,30 +67,36 @@
   font-weight: 300;
 }
 
-.a-award {
+.a-stack {
   margin-top: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.a-award-texts {
+.a-stack-texts {
   width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.a-award-title {
+.a-stack-title {
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 @media screen and (max-width: 480px) {
   .a {
+    height: 135vh;
     flex-direction: column;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
   .a-left {
+    flex: 0.4;
     width: 100%;
   }
 
@@ -86,12 +104,17 @@
     height: 30vh;
   }
 
-  .a-card.bg,
-  .a-award {
+  .a-card.bg {
     display: none;
   }
 
   .a-right {
+    flex: 0.7;
     padding: 20px;
+  }
+
+  .a-stack-img-wrapper {
+    width: 70%;
+    justify-content: space-between;
   }
 }

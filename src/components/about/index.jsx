@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import "./index.css";
-import Me from "../../img/profile.jpg";
-import Award from "../../img/piagam.png";
+import { Profile, RN, CSS, JS, HTML } from "../../img";
 import { ThemeContext } from "../../context";
 
 const About = () => {
@@ -16,7 +15,7 @@ const About = () => {
           style={{ backgroundColor: darkMode && "white" }}
         ></div>
         <div className="a-card">
-          <img src={Me} alt="" className="a-img" />
+          <img src={Profile} alt="" className="a-img" />
         </div>
       </div>
       <div className="a-right">
@@ -33,14 +32,15 @@ const About = () => {
           Lullaby, so don't be confused if in almost all my social media and in
           game name, my name is not Samuel.
         </p>
-        <div className="a-award">
-          <img src={Award} alt="" className="a-award-img" />
-          <div className="a-award-texts">
-            <h4 className="a-award-title">Title Award</h4>
-            <p className="a-award-desc">
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+        <div className="a-stack">
+          <div className="a-stack-texts">
+            <h2 className="a-stack-title">My skill</h2>
+          </div>
+          <div className="a-stack-img-wrapper">
+            <img src={JS} alt="" className="a-stack-img" />
+            <img src={CSS} alt="" className="a-stack-img" />
+            <img src={HTML} alt="" className="a-stack-img" />
+            <img src={RN} alt="" className="a-stack-img" />
           </div>
         </div>
       </div>

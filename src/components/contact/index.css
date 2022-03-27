@@ -67,6 +67,10 @@
   font-weight: 200;
 }
 
+.c-desc-end {
+  font-weight: 200;
+}
+
 .c-end {
   width: 100%;
   height: 30px;
@@ -126,8 +130,15 @@ button {
     display: none;
   }
 
+  .c-desc-end {
+    font-weight: 200;
+  }
+
   .c-end {
-    display: none;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    margin-top: 135%;
   }
 
   form {

@@ -28,6 +28,7 @@
 
 @media screen and (max-width: 480px) {
   .pl {
+    height: 85vh;
     padding: 10px;
   }
 

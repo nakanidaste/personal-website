@@ -1,8 +1,6 @@
 import React, { useRef, useState, useContext } from "react";
 import "./index.css";
-import Phone from "../../img/phone.png";
-import Email from "../../img/email.png";
-import Address from "../../img/location.png";
+import { Phone, Email, Location } from "../../img";
 import emailjs from "@emailjs/browser";
 import { ThemeContext } from "../../context";
 
@@ -58,7 +56,7 @@ const Contact = () => {
             </div>
             <div className="c-info-item">
               <div className="c-icon-wrapper">
-                <img src={Address} alt="" className="c-icon" />{" "}
+                <img src={Location} alt="" className="c-icon" />{" "}
               </div>
               <p className="c-icon-texts">Wonogiri, Jawa Tengah, Indonesia</p>
             </div>
@@ -119,7 +117,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="c-end">
-        <p className="c-desc">
+        <p className="c-desc-end">
           Made by me with <span id="emoji">❤️❤️❤️</span>
         </p>
       </div>
