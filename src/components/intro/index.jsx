@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import "./index.css";
-//import Me from "../../img/profile.jpg";
 import Lottie from "react-lottie";
 import Animation from "../../utils/animation.json";
 import { ThemeContext } from "../../context";

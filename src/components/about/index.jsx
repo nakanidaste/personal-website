@@ -1,4 +1,6 @@
 import React, { useContext } from "react";
+import Tippy from "@tippy.js/react";
+import "tippy.js/dist/tippy.css";
 import "./index.css";
 import { Profile, RN, CSS, JS, HTML } from "../../img";
 import { ThemeContext } from "../../context";
@@ -37,10 +39,18 @@ const About = () => {
             <h2 className="a-stack-title">My skill</h2>
           </div>
           <div className="a-stack-img-wrapper">
-            <img src={JS} alt="" className="a-stack-img" />
-            <img src={CSS} alt="" className="a-stack-img" />
-            <img src={HTML} alt="" className="a-stack-img" />
-            <img src={RN} alt="" className="a-stack-img" />
+            <Tippy content="Javascript">
+              <img src={JS} alt="" className="a-stack-img" />
+            </Tippy>
+            <Tippy content="CSS">
+              <img src={CSS} alt="" className="a-stack-img" />
+            </Tippy>
+            <Tippy content="HTML">
+              <img src={HTML} alt="" className="a-stack-img" />
+            </Tippy>
+            <Tippy content="React Native">
+              <img src={RN} alt="" className="a-stack-img" />
+            </Tippy>
           </div>
         </div>
       </div>
